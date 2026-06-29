@@ -99,7 +99,7 @@ body > .container {
 }
 
 .is-ft {
-  background-color: #040a55;
+  background-color: #3E5F44;
 }
 
 
@@ -149,7 +149,7 @@ body > .container {
 }
 
 .hero {
-  background-color: #040a55;
+  background-color: #3E5F44;
   position: relative;
   border: 36px solid #FAF3E0;
 }
@@ -186,7 +186,7 @@ body > .container {
 .card-publisher {
   display: block;
   margin-bottom: 0.5rem;
-  color: #040a55;
+  color: #3E5F44;
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
