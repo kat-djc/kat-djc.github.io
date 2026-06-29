@@ -1,0 +1,407 @@
+/* Add global box-sizing rule */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure body and html do not exceed viewport width */
+html, body {
+  overflow-x: hidden;
+}
+
+.bsky-icon {
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg viewBox="0 0 360 320" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M254.896 188.031C252.711 214.159 230.893 235.116 204.097 235.116H155.459C128.663 235.116 106.845 214.159 104.66 188.031L102.081 157.019H257.475L254.896 188.031Z" fill="currentColor"/><path d="M132.959 85.354H226.597L179.778 157.019H102.081L132.959 85.354Z" fill="currentColor"/></svg>');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 1.25em;
+  vertical-align: middle;
+  width: 1.25em;
+}
+
+.icon {
+  text-decoration: none !important;
+}
+
+.card {
+  background-color: #EFE8D8;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.card-image {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.card-image figure,
+.card-image .image,
+.card-image img {
+  border-radius: 0 !important;
+}
+
+.card-content {
+  padding: 0 !important;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-content > .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-content > .content > .mt-4:last-child,
+.card-content > .mt-4:last-child {
+  margin-top: auto;
+}
+
+.footer.is-ft {
+  padding: 1.5rem 1.5rem;
+}
+
+.footer.is-ft .social-icons.mt-4 {
+  margin-top: 0 !important;
+}
+
+body > .container {
+  max-width: none;
+  width: 100%;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 36px;
+}
+
+.is-one-third {
+  max-width: 500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.subtitle {
+  box-shadow: none;
+  margin-bottom: 5px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica,
+    arial, sans-serif;
+  line-height: 1.5;
+}
+
+.hero-subtitle {
+  color: white;
+}
+
+.is-ft {
+  background-color: #3E5F44;
+}
+
+
+.custom-link {
+  text-decoration: none;
+}
+
+.content > a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.content > a {
+  text-decoration: none;
+}
+
+.custom-link {
+  color: white;
+
+}
+
+.custom-link:hover {
+  color: white;
+}
+
+.image-container {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+}
+
+.box {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.hero {
+  background-color: #3E5F44;
+  position: relative;
+  border: 36px solid #FAF3E0;
+}
+
+/* Adjust padding for hero-body */
+.hero-body {
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.tag {
+  height: auto !important;
+  padding: 0.75rem 1.25rem !important;
+  border-radius: 0 !important;
+  letter-spacing: 0;
+  font-size: 0.95rem !important;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.card .mt-4:last-child {
+  margin-top: auto !important;
+  padding-top: 1.5rem;
+}
+
+.card .subtitle {
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
+.card .title.is-4 {
+  margin-bottom: 0.6rem;
+}
+
+.card-publisher {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #3E5F44;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.title {
+  padding-bottom: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica,
+    arial, sans-serif;
+}
+
+body {
+  background-color: #FAF3E0;
+  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica,
+    arial, sans-serif;
+}
+
+.caption-container {
+  margin-top: 1rem;
+  min-height: 2em;
+  position: relative;
+}
+
+.is-3 {
+  padding-bottom: 5px;
+}
+
+.scroll-arrow {
+  bottom: 30px;
+  cursor: pointer;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+@media screen and (min-width: 771px) {
+  .scroll-arrow {
+    display: none;
+  }
+}
+
+.arrow-down {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(45deg);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  40% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  60% {
+    transform: translateY(-5px) rotate(45deg);
+  }
+}
+
+.image-switch {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.profile-container {
+  background-position: center;
+  background-size: cover;
+  border-radius: 0;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.profile-container img {
+  border-radius: 0;
+  display: block;
+}
+
+.hover-image {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+.hover-caption {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+.image-switch:hover .hover-image,
+.image-switch:hover .hover-caption {
+  opacity: 1;
+}
+
+.image-switch:hover .primary-image,
+.image-switch:hover .primary-caption {
+  opacity: 0;
+}
+
+
+a {
+  text-decoration: underline;
+  color: white;
+}
+
+
+
+a:hover {
+  color: #EDA35A;
+}
+
+.section-header {
+  margin-top: 36px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container > .columns:first-child {
+  margin-top: 24px;
+}
+
+.section-header .title {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Masonry feed for project cards (positions assigned by JS in script.js) */
+.container > .columns.is-multiline {
+  display: block;
+  margin: 0;
+}
+
+.container > .columns.is-multiline > .column {
+  max-width: none !important;
+}
+
+/* Hide the grid until JS positions the masonry, to avoid a single-column flash.
+   Scoped to .js so no-JS users still see the cards (stacked). */
+.js .container > .columns.is-multiline {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.js .container > .columns.is-multiline.masonry-ready {
+  opacity: 1;
+}
+
+.columns.is-vcentered > .column {
+  padding: 2rem;
+}
+
+.winner {
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.winner-label {
+  position:absolute;
+  text-align: center;
+  font-weight: bold;
+  left:-10px;
+  bottom: -50px;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.winner-box:hover .winner-label {
+    background-color: white;
+    color: black;
+}
+
+.winner-box {
+  position: absolute;
+  width: 120px;
+  right: -50px;
+  top: -30px;
+  z-index: 1001;
+}
+
+
+
+@media screen and (max-width: 770px) {
+  .mobile-disappear {
+    display: none;
+  }
+
+  .hero {
+    border-width: 12px;
+  }
+
+  .hero-body {
+    padding: 1rem 1rem 6rem 1rem;
+  }
+
+  .columns.is-multiline > .column {
+    width: 100%;
+  }
+}
